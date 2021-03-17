@@ -388,6 +388,11 @@ body {
 
 /* Адрес в подвале */
 
+.adds-unit,
+.adds-list {
+  background-color: var(--primary-background);
+}
+
 .adds-list .location {
   color: var(--primary-white);
 }
@@ -409,16 +414,6 @@ body {
 
 .adds-list .item:not(:last-child) {
   padding-bottom: 9px;
-}
-
-.adds-list .item:last-child {
-  padding-bottom: 60px;
-}
-
-.adds-unit,
-.adds-list {
-  list-style: none;
-  background-color: var(--primary-background);
 }
 
 .adds-list .item:last-child {
