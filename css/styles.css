@@ -64,7 +64,6 @@ body {
 .gallery-list,
 .team-list,
 .contact-list,
-.adds-list,
 .work-list,
 .filters-list {
   list-style: none;
@@ -297,14 +296,16 @@ body {
 /* стр.Портфолио/фильтры-кнопки */
 
 .buttons-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+  text-align: center;
   max-width: 611px;
+  border-color: grey;
 }
 
 .filters-list:not(:last-child) {
   margin-right: 8px;
-}
-.filters-item {
-  display: inline-block;
 }
 
 .button-flex:not(:last-child) {
@@ -393,6 +394,8 @@ body {
 .adds-unit,
 .adds-list {
   background-color: var(--primary-background);
+  list-style: none;
+  padding-left: 0;
 }
 
 .adds-list .location {
