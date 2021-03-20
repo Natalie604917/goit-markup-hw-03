@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: inherit;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 
   color: var(--primary-text);
@@ -77,6 +77,12 @@ body {
   padding: 0;
 }
 
+.gallery-img,
+.team-image,
+.work-img {
+  display: block;
+}
+
 .bg-nav {
   background-color: var(--primary-white);
 }
@@ -120,7 +126,7 @@ body {
 .logo-web,
 .logo-studio {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   font-weight: 700;
   font-size: 26px;
@@ -210,9 +216,6 @@ body {
 }
 
 /*стр.Студия/ Чем мы занимаемся */
-.gallery-img {
-  display: block;
-}
 
 .gallery-flex {
   width: 370px;
@@ -255,10 +258,7 @@ body {
 }
 
 /* стр.Студия/ Команда */
-.team-image {
-  display: block;
-  padding-bottom: 30px;
-}
+
 .team-title {
   color: var(--title-text);
   font-weight: 500;
@@ -280,7 +280,6 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
   color: var(--title-text);
 
   background-color: blueviolet;
@@ -292,6 +291,10 @@ body {
 
 .team-flex:not(:last-child) {
   margin-right: 30px;
+}
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* стр.Портфолио/фильтры-кнопки */
@@ -320,7 +323,7 @@ body {
 .filter-primary {
   color: var(--title-text);
   background-color: var(--secondary-background);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -337,7 +340,7 @@ body {
 .filter-secondary {
   color: var(--primary-white);
   background-color: var(--accent);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -391,14 +394,12 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 20px;
 
   background-color: blueviolet;
 }
 
-.work-img {
-  display: block;
-  padding-bottom: 20px;
+.work-content {
+  padding: 20px 24px;
 }
 
 /* Адрес в подвале */
