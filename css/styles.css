@@ -38,17 +38,19 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-
-  background-color: blue;
 }
 
+.container-hero {
+  background-color: var(--primary-background);
+}
 .container-works {
   padding: 0;
 }
+
 .section {
   padding: 94px 0;
-  background-color: green;
 }
+
 .section:nth-last-child(3) {
   padding: 0;
 }
@@ -96,17 +98,14 @@ body {
 
 .nav-list {
   margin-left: 93px;
-  background-color: brown;
 }
 
 .nav-list .nav-item:not(:last-child) {
   margin-right: 50px;
-  background-color: azure;
 }
 
 .contact-list .contact-item:not(:last-child) {
   margin-right: 50px;
-  background-color: blueviolet;
 }
 
 /* Логотип */
@@ -131,8 +130,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
-  background-color: coral;
 }
 
 /* Навигация */
@@ -153,6 +150,44 @@ body {
   color: var(--accent);
 }
 
+/* Контейнеры c карточками */
+
+.feature-flex,
+.team-flex {
+  width: 270px;
+}
+
+.feature-flex,
+.team-flex:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-flex {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  background-color: var(--primary-white);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--card-border-color);
+}
+
+.work-flex:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-flex:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.gallery-flex {
+  width: 370px;
+}
+.gallery-flex:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Контакты в шапке */
 
 .contact-list .link {
@@ -165,7 +200,6 @@ body {
 }
 .contact-list {
   margin-left: auto;
-  background-color: aqua;
 }
 
 .contact-list .link:hover,
@@ -173,12 +207,12 @@ body {
   color: var(--accent);
 }
 
-/* стр.Студия/ Баннер */
+/* стр.Студия/ Hero */
 
 .hero-content {
   padding-top: 98px;
   max-width: 696px;
-  background-color: grey;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,6 +236,7 @@ body {
 }
 
 /*  Все заголовки  h2 */
+
 .unit-title {
   color: var(--title-text);
 
@@ -212,19 +247,10 @@ body {
 
   margin-top: 0;
   margin-bottom: 50px;
-  background-color: yellowgreen;
-}
-
-/*стр.Студия/ Чем мы занимаемся */
-
-.gallery-flex {
-  width: 370px;
-}
-.gallery-flex:not(:last-child) {
-  margin-right: 30px;
 }
 
 /*стр.Студия/ Особенности */
+
 .feature-title {
   color: var(--title-text);
   font-weight: 700;
@@ -235,7 +261,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
-  background-color: rgb(177, 66, 75);
 }
 
 .feature-text {
@@ -245,16 +270,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 6px;
-
-  background-color: blueviolet;
-}
-
-.feature-flex {
-  width: 270px;
-}
-
-.feature-flex:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* стр.Студия/ Команда */
@@ -269,8 +284,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
-
-  background-color: rgb(57, 102, 85);
 }
 
 .team-text {
@@ -281,17 +294,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text);
-
-  background-color: blueviolet;
 }
 
-.team-flex {
-  width: 270px;
-}
-
-.team-flex:not(:last-child) {
-  margin-right: 30px;
-}
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -356,24 +360,6 @@ body {
 .work-list {
   flex-wrap: wrap;
 }
-.work-flex {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  background-color: var(--primary-white);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--card-border-color);
-}
-
-.work-flex:nth-child(3n) {
-  margin-right: 0;
-}
-
-.work-flex:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
 
 .work-title {
   color: var(--title-text);
@@ -385,7 +371,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
-  background-color: yellowgreen;
 }
 
 .work-text {
@@ -394,8 +379,6 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
-
-  background-color: blueviolet;
 }
 
 .work-content {
